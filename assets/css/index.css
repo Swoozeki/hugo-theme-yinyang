@@ -176,6 +176,7 @@ a:hover {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 8px;
+  color: var(--primary-color)
 }
 
 .post-tags {
@@ -202,6 +203,10 @@ a:hover {
 
 .post-content {
   margin-bottom: 50px;
+}
+
+.post-content h2 {
+  color: var(--primary-color);
 }
 
 .post-content p {
