@@ -1,7 +1,7 @@
 {{ $curLanguageName := .Site.Language.LanguageName }}
 <header>
   <div class="header-title">
-    <a href="{{ .Site.LanguagePrefix }}/"
+    <a href="/{{ .Site.Params.baseRoute }}/{{ .Site.LanguagePrefix }}/"
       >{{ or .Site.Params.headTitle .Site.Author.name }}</a
     >
   </div>
@@ -9,7 +9,8 @@
 </header>
 <div class="row end-md center-xs header-items">
   {{ range .Site.Params.socials }}
-  <div class="header-item">
+  <div class="header-item">you
+
     <a href="{{ .link }}" target="_blank">{{ .name }}</a>
   </div>
   {{ end }}
